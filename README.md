@@ -2,24 +2,22 @@
 
 A Laravel Nova card that displays any html content, e.g. lists, notifications, small custom reports.
 
-[//]: # (<p style="text-align: center;" align="center">)
-
-[//]: # ()
-[//]: # (<img alt="Laravel Nova HTML Card" src="https://github.com/abordage/nova-html-card/blob/master/docs/images/abordage-nova-html-card-screenshot.png?raw=true">)
-
-[//]: # ()
-[//]: # (</p>)
+<p style="text-align: center;" align="center">
+<img alt="Laravel Nova HTML Card" src="https://github.com/abordage/nova-html-card/blob/master/docs/images/abordage-nova-html-card.png?raw=true">
+</p>
 
 
 [//]: # (<p style="text-align: center;" align="center">)
 
+[//]: # ()
 [//]: # ()
 [//]: # (<a href="https://packagist.org/packages/abordage/nova-html-card" title="Packagist version">)
 
-[//]: # (    <img alt="Packagist Version" src="https://img.shields.io/packagist/v/abordage/nova-html-card">)
+[//]: # (<img alt="Packagist Version" src="https://img.shields.io/packagist/v/abordage/nova-html-card">)
 
 [//]: # (</a>)
 
+[//]: # ()
 [//]: # ()
 [//]: # (<a href="https://github.com/abordage/nova-html-card/actions/workflows/php-cs-fixer.yml" title="GitHub Code Style Status">)
 
@@ -28,12 +26,14 @@ A Laravel Nova card that displays any html content, e.g. lists, notifications, s
 [//]: # (</a>)
 
 [//]: # ()
+[//]: # ()
 [//]: # (<a href="https://www.php.net/" title="PHP version">)
 
 [//]: # (    <img alt="PHP Version Support" src="https://img.shields.io/packagist/php-v/abordage/nova-html-card">)
 
 [//]: # (</a>)
 
+[//]: # ()
 [//]: # ()
 [//]: # (<a href="https://github.com/abordage/nova-html-card/blob/master/LICENSE.md" title="License">)
 
