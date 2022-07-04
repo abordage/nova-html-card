@@ -7,42 +7,30 @@ A Laravel Nova card that displays any html content, e.g. lists, notifications, s
 </p>
 
 
-[//]: # (<p style="text-align: center;" align="center">)
+<p style="text-align: center;" align="center">
 
-[//]: # ()
-[//]: # ()
-[//]: # (<a href="https://packagist.org/packages/abordage/nova-html-card" title="Packagist version">)
+<a href="https://packagist.org/packages/abordage/nova-html-card" title="Packagist version">
+    <img alt="Packagist Version" src="https://img.shields.io/packagist/v/abordage/nova-html-card">
+</a>
 
-[//]: # (<img alt="Packagist Version" src="https://img.shields.io/packagist/v/abordage/nova-html-card">)
+<a href="https://github.com/abordage/nova-html-card/actions/workflows/php-cs-fixer.yml" title="GitHub Code Style Status">
+    <img alt="GitHub Code Style Status" src="https://img.shields.io/github/workflow/status/abordage/nova-html-card/PHP%20CS%20Fixer?label=code%20style">
+</a>
 
-[//]: # (</a>)
+<a href="https://nova.laravel.com/docs/4.0/" title="Laravel Nova Version">
+    <img alt="Laravel Nova Version" src="https://img.shields.io/badge/laravel%20nova-4.0-1DA5E7">
+</a>
 
-[//]: # ()
-[//]: # ()
-[//]: # (<a href="https://github.com/abordage/nova-html-card/actions/workflows/php-cs-fixer.yml" title="GitHub Code Style Status">)
+<a href="https://www.php.net/" title="PHP version">
+    <img alt="PHP Version Support" src="https://img.shields.io/packagist/php-v/abordage/nova-html-card">
+</a>
 
-[//]: # (    <img alt="GitHub Code Style Status" src="https://img.shields.io/github/workflow/status/abordage/nova-html-card/PHP%20CS%20Fixer?label=code%20style">)
+<a href="https://github.com/abordage/nova-html-card/blob/master/LICENSE.md" title="License">
+    <img alt="License" src="https://img.shields.io/github/license/abordage/nova-html-card">
+</a>
 
-[//]: # (</a>)
 
-[//]: # ()
-[//]: # ()
-[//]: # (<a href="https://www.php.net/" title="PHP version">)
-
-[//]: # (    <img alt="PHP Version Support" src="https://img.shields.io/packagist/php-v/abordage/nova-html-card">)
-
-[//]: # (</a>)
-
-[//]: # ()
-[//]: # ()
-[//]: # (<a href="https://github.com/abordage/nova-html-card/blob/master/LICENSE.md" title="License">)
-
-[//]: # (    <img alt="License" src="https://img.shields.io/github/license/abordage/nova-html-card">)
-
-[//]: # (</a>)
-
-[//]: # ()
-[//]: # (</p>)
+</p>
 
 ## Requirements
 - PHP 7.4 or higher
