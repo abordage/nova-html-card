@@ -93,13 +93,13 @@ class MyHtmlCard extends HtmlCard
 }
 
 ```
-If set `$height = 'fixed'` content will scroll
+If set `$height = 'fixed'` content will scroll:
 
 <p style="text-align: center;" align="center">
 <img alt="Laravel Nova HTML Card" src="https://github.com/abordage/nova-html-card/blob/master/docs/images/abordage-nova-html-card-height-fixed.gif?raw=true">
 </p>
 
-If set `$height = 'dynamic'` content is shown in full
+If set `$height = 'dynamic'` content is shown in full:
 
 <p style="text-align: center;" align="center">
 <img alt="Laravel Nova HTML Card" src="https://github.com/abordage/nova-html-card/blob/master/docs/images/abordage-nova-html-card-height-dynamic.png?raw=true">
