@@ -49,11 +49,10 @@ composer require abordage/nova-html-card
 To create a cards use the `artisan` command:
 
 ```bash
-php artisan nova-html-card MyFirstCard
+php artisan nova-html-card MyHtmlCard
 ```
-By default, all new cards will be placed in the `app/Nova/Cards` directory.
-
-Once your html card class has been generated, you're ready to customize it:
+By default, all new cards will be placed in the `app/Nova/Cards` directory. Once your html card class has been generated, 
+you're ready to customize it:
 
 ```php
 <?php
@@ -62,48 +61,41 @@ namespace App\Nova\Cards;
 
 use Abordage\HtmlCard\HtmlCard;
 
-class MyFirstCard extends HtmlCard
+class MyHtmlCard extends HtmlCard
 {
-    public function content(): string
-     {
-        return '<h1>Some content</h1>';
-     }
+    /**
+     * Name of the card (optional)
+     */
+    public string $title = '';
 
     /**
      * The width of the card (1/2, 1/3, 1/4 or full).
-     *
-     * @var string
      */
     public $width = '1/3';
 
     /**
+     * The height strategy of the card (fixed or dynamic).
+     */
+    public $height = 'fixed';
+
+    /**
      * Align content to the center of the card.
-     *
-     * @var bool
      */
     public bool $center = true;
+
+    /**
+     * Html content
+     */
+    public function content(): string
+     {
+        return '<h1 class="text-4xl">Some content</h1>';
+     }
 }
+
 ```
 
-Once you have defined a card, you are ready to attach it to a dashboard or resource. You should simply add it to the array of metrics / cards returned by this method:
+Once you have defined a card, you are ready to attach it to a dashboard or resource. You should simply add it to the array of metrics / cards.
 
-```php
-<?php
-
-namespace App\Nova\Dashboards;
-
-use Laravel\Nova\Dashboard;
-
-class Examples extends Dashboard
-{
-    public function cards(): array
-    {
-        return [
-            new \App\Nova\Cards\MyFirstCard(),
-        ];
-    }
-}
-```
 
 ## Feedback
 If you have any feedback, comments or suggestions, please feel free to open an issue within this repository.
