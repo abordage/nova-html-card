@@ -18,6 +18,7 @@ class CardServiceProvider extends ServiceProvider
     {
         Nova::serving(function (ServingNova $event) {
             Nova::script('abordage-html-card', __DIR__ . '/../dist/js/card.js');
+            Nova::style('abordage-html-card', __DIR__ . '/../dist/css/card.css');
         });
 
         if ($this->app->runningInConsole()) {
