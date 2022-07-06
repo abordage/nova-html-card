@@ -24,7 +24,7 @@ class {{ class }} extends HtmlCard
     /**
      * Align content to the center of the card.
      */
-    public bool $center = false;
+    public bool $center = true;
 
     /**
      * Html content
