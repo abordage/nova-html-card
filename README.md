@@ -99,6 +99,11 @@ If set `$height = 'fixed'` content will scroll
 <img alt="Laravel Nova HTML Card" src="https://github.com/abordage/nova-html-card/blob/master/docs/images/abordage-nova-html-card-height-fixed.gif?raw=true">
 </p>
 
+If set `$height = 'dynamic'` content is shown in full
+
+<p style="text-align: center;" align="center">
+<img alt="Laravel Nova HTML Card" src="https://github.com/abordage/nova-html-card/blob/master/docs/images/abordage-nova-html-card-height-dynamic.png?raw=true">
+</p>
 
 Once you have defined a card, you are ready to attach it to a dashboard or resource. You should simply add it to the array of metrics / cards.
 
