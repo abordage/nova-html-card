@@ -4,6 +4,7 @@ namespace Abordage\HtmlCard\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
+use Laravel\Nova\Nova;
 
 class CardCommand extends GeneratorCommand
 {
@@ -30,7 +31,7 @@ class CardCommand extends GeneratorCommand
         /** @var string $key */
         $key = preg_replace('/[^a-zA-Z\d]+/', '', $name);
 
-        return str_replace('uri-key', Str::kebab($key), $stub);
+        return str_replace(['card-title', 'uri-key'], [Nova::humanize($name), Str::kebab($key)], $stub);
     }
 
     /**
