@@ -14,7 +14,7 @@ A Laravel Nova card that displays any html content, e.g. lists, notifications, s
 </a>
 
 <a href="https://github.com/abordage/nova-html-card/actions/workflows/php-cs-fixer.yml" title="GitHub Code Style Status">
-    <img alt="GitHub Code Style Status" src="https://img.shields.io/github/workflow/status/abordage/nova-html-card/PHP%20CS%20Fixer?label=code%20style">
+    <img alt="GitHub Code Style Status" src="https://img.shields.io/github/actions/workflow/status/abordage/nova-html-card/php-cs-fixer.yml?label=code%20style">
 </a>
 
 <a href="https://nova.laravel.com/docs/4.0/" title="Laravel Nova Version">
