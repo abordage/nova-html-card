@@ -1,3 +1,5 @@
+<!--suppress HtmlDeprecatedAttribute -->
+
 # Nova Html Card
 
 A Laravel Nova card that displays any html content, e.g. lists, notifications, small custom reports.
@@ -33,7 +35,7 @@ A Laravel Nova card that displays any html content, e.g. lists, notifications, s
 </p>
 
 ## Requirements
-- PHP 7.4 or higher
+- PHP 7.4 - 8.2
 - Nova 4
 
 ## Installation
