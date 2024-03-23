@@ -35,7 +35,8 @@ A Laravel Nova card that displays any html content, e.g. lists, notifications, s
 </p>
 
 ## Requirements
-- PHP 7.4 - 8.2
+- PHP 7.4 - 8.3
+- Laravel 8.x - 11.x
 - Nova 4
 
 ## Installation
