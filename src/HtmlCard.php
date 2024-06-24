@@ -5,38 +5,57 @@ declare(strict_types=1);
 namespace Abordage\HtmlCard;
 
 use Laravel\Nova\Card;
+use \Closure;
 
 class HtmlCard extends Card
 {
-    public string $title = '';
-    public string $content = '';
+    public $component = 'abordage-html-card';
 
-    public $width = '1/3';
-    public $height = 'fixed';
+    public string|Closure|null $title = '';
+    public string|Closure|null $content = '';
+
     public bool $center = true;
 
-    public function __construct()
+    public function withContent(string|Closure|null $content = ''): static
     {
-        parent::__construct('abordage-html-card');
-        if (request()->is('nova-api/metrics/*')) {
-            return;
-        }
-
-        $this->content = $this->content();
+        $this->content = $content;
+        return $this;
     }
 
-    public function content(): string
+    public function withTitle(string|Closure|null $title = ''): static
     {
-        return '';
+        $this->title = $title;
+        return $this;
+    }
+
+    public function centered(bool $center = true): static
+    {
+        return $this->center = $center;
+        return $this;
+    }
+
+    /**
+     * The evaluated content.
+     */
+    public function content(): ?string
+    {
+        return $this->content instanceof Closure ? ($this->content)($this) : $this->content;
+    }
+
+    /**
+     * The evaluated title.
+     */
+    public function title(): ?string
+    {
+        return $this->title instanceof Closure ? ($this->title)($this) : $this->title;
     }
 
     public function jsonSerialize(): array
     {
         return array_merge([
-            'title' => $this->title,
-            'content' => $this->content,
-            'height' => '$this->height',
-            'center' => $this->center,
+            'title'   => $this->title(),
+            'content' => $this->content(),
+            'center'  => $this->center,
         ], parent::jsonSerialize());
     }
 }
