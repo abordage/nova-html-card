@@ -2,6 +2,14 @@
 
 All notable changes to `nova-html-card` will be documented in this file.
 
+## 1.1.1 - 2025-01-11
+
+### What's Changed
+
+* Small fix by @abordage in https://github.com/abordage/nova-html-card/pull/33
+
+**Full Changelog**: https://github.com/abordage/nova-html-card/compare/1.1.0...1.1.1
+
 ## 1.1.0 - 2025-01-11
 
 ### What's Changed
