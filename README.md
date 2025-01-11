@@ -20,7 +20,7 @@ A Laravel Nova card that displays any html content, e.g. lists, notifications, s
 </a>
 
 <a href="https://nova.laravel.com/docs/4.0/" title="Laravel Nova Version">
-    <img alt="Laravel Nova Version" src="https://img.shields.io/badge/laravel%20nova-4.0-1DA5E7">
+    <img alt="Laravel Nova Version" src="https://img.shields.io/badge/laravel%20nova-5.0-1DA5E7">
 </a>
 
 <a href="https://www.php.net/" title="PHP version">
@@ -35,9 +35,9 @@ A Laravel Nova card that displays any html content, e.g. lists, notifications, s
 </p>
 
 ## Requirements
-- PHP 7.4 - 8.3
+- PHP 7.4 - 8.4
 - Laravel 8.x - 11.x
-- Nova 4
+- Nova 4.x - 5.x
 
 ## Installation
 

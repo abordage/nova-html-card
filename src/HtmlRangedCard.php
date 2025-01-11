@@ -21,8 +21,9 @@ class HtmlRangedCard extends RangedMetric
         parent::__construct('abordage-html-ranged-card');
     }
 
-    public function calculate(NovaRequest $request)
+    public function calculate(NovaRequest $request): string
     {
+        /** @var string $value */
         $value = $request->range ?? $this->selectedRangeKey;
 
         return $this->content($value);
@@ -43,7 +44,7 @@ class HtmlRangedCard extends RangedMetric
         return array_merge([
             'title' => $this->title,
             'content' => $this->content,
-            'height' => '$this->height',
+            'height' => $this->height,
             'center' => $this->center,
         ], parent::jsonSerialize());
     }
