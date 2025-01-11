@@ -24,6 +24,7 @@ class HtmlRangedCard extends RangedMetric
     public function calculate(NovaRequest $request)
     {
         $value = $request->range ?? $this->selectedRangeKey;
+
         return $this->content($value);
     }
 
