@@ -59,5 +59,11 @@
         "test:all": "Run all code analysis and tests",
         "test:phpcsf": "Run PHP-CS-Fixer test",
         "test:phpstan": "Run PHPStan"
+    },
+    "repositories": {
+        "nova": {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
     }
 }

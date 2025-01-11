@@ -1,6 +1,7 @@
 <template>
     <card :class="cardStyle">
         <h2 v-if="card.title" class="font-bold mb-2">{{ card.title }}</h2>
+
         <div v-if="card.height === 'fixed'" :class="fixedStyle">
             <div :class="fixedInnerStyle">
                 <div v-html="card.content"></div>
@@ -21,17 +22,17 @@ export default {
     },
 
     computed: {
-        cardStyle () {
-            return this.card.center ? 'flex flex-col items-center justify-center py-4' : 'px-6 py-4'
+        cardStyle() {
+            return this.card.center ? 'flex flex-col items-center justify-center py-4' : 'px-6 py-4';
         },
-        fixedStyle () {
-            return this.card.title ? 'min-h-[90px]' : 'min-h-[128px]'
+        fixedStyle() {
+            return this.card.title ? 'min-h-[90px]' : 'min-h-[128px]';
         },
-        fixedInnerStyle () {
-            return this.card.title ? 
-                'overflow-hidden overflow-y-auto fixed-html-card max-h-[90px]' :
-                'overflow-hidden overflow-y-auto fixed-html-card max-h-[128px]'
-        }
+        fixedInnerStyle() {
+            return this.card.title
+                ? 'overflow-hidden overflow-y-auto fixed-html-card max-h-[90px]'
+                : 'overflow-hidden overflow-y-auto fixed-html-card max-h-[128px]';
+        },
     },
-}
+};
 </script>
