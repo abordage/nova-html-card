@@ -2,6 +2,18 @@
 
 All notable changes to `nova-html-card` will be documented in this file.
 
+## 1.1.0 - 2025-01-11
+
+### What's Changed
+
+* Added HtmlRangedCard for a HTML card with display/range options by @Tarpsvo in https://github.com/abordage/nova-html-card/pull/32
+
+### New Contributors
+
+* @Tarpsvo made their first contribution in https://github.com/abordage/nova-html-card/pull/32
+
+**Full Changelog**: https://github.com/abordage/nova-html-card/compare/1.0.0...1.1.0
+
 ## 1.0.0 - 2024-12-17
 
 ### What's Changed
