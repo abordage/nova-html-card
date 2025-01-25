@@ -53,9 +53,10 @@ class HtmlCard extends Card
     public function jsonSerialize(): array
     {
         return array_merge([
-            'title'   => $this->title(),
-            'content' => $this->content(),
-            'center'  => $this->center,
+            'title' => $this->title,
+            'content' => $this->content,
+            'height' => $this->height,
+            'center' => $this->center,
         ], parent::jsonSerialize());
     }
 }

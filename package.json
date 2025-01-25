@@ -12,9 +12,10 @@
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.2.22",
+    "axios": "^1.6.0",
     "laravel-mix": "^6.0.41",
     "postcss": "^8.3.11",
-    "vue-loader": "^16.8.3"
-  },
-  "dependencies": {}
+    "vue-loader": "^16.8.3",
+    "vuex": "^4.1.0"
+  }
 }

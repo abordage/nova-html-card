@@ -2,6 +2,45 @@
 
 All notable changes to `nova-html-card` will be documented in this file.
 
+## 1.1.1 - 2025-01-11
+
+### What's Changed
+
+* Small fix by @abordage in https://github.com/abordage/nova-html-card/pull/33
+
+**Full Changelog**: https://github.com/abordage/nova-html-card/compare/1.1.0...1.1.1
+
+## 1.1.0 - 2025-01-11
+
+### What's Changed
+
+* Added HtmlRangedCard for a HTML card with display/range options by @Tarpsvo in https://github.com/abordage/nova-html-card/pull/32
+
+### New Contributors
+
+* @Tarpsvo made their first contribution in https://github.com/abordage/nova-html-card/pull/32
+
+**Full Changelog**: https://github.com/abordage/nova-html-card/compare/1.0.0...1.1.0
+
+## 1.0.0 - 2024-12-17
+
+### What's Changed
+
+* Bump lycheeverse/lychee-action from 1.8.0 to 1.9.3 by @dependabot in https://github.com/abordage/nova-html-card/pull/21
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 by @dependabot in https://github.com/abordage/nova-html-card/pull/22
+* Bump peter-evans/create-issue-from-file from 4 to 5 by @dependabot in https://github.com/abordage/nova-html-card/pull/20
+* Bump lycheeverse/lychee-action from 1.9.3 to 1.10.0 by @dependabot in https://github.com/abordage/nova-html-card/pull/23
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/abordage/nova-html-card/pull/24
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/abordage/nova-html-card/pull/26
+* Bump lycheeverse/lychee-action from 1.10.0 to 2.1.0 by @dependabot in https://github.com/abordage/nova-html-card/pull/29
+* Nova 5.0 support by @puzzledmonkey in https://github.com/abordage/nova-html-card/pull/30
+
+### New Contributors
+
+* @puzzledmonkey made their first contribution in https://github.com/abordage/nova-html-card/pull/30
+
+**Full Changelog**: https://github.com/abordage/nova-html-card/compare/0.3.1...1.0.0
+
 ## 0.3.1 - 2024-03-23
 
 ### What's Changed
