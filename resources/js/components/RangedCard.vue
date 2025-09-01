@@ -1,7 +1,7 @@
 <template>
     <loading-card :class="cardStyle" :loading="loading">
-        <div class="flex">
-            <h2 v-if="card.title" class="font-bold mb-2">{{ card.title }}</h2>
+        <div class="flex border-b border-gray-200 dark:border-gray-700 items-center pb-2">
+            <h2 v-if="card.title" class="font-bold pb-2 flex items-center gap-2" v-html="card.title" />
 
             <SelectControl
                 v-if="card.ranges.length > 0"
@@ -32,6 +32,7 @@ export default {
     data() {
         return {
             loading: false,
+            selectedRangeKey: null,
         };
     },
 
@@ -69,7 +70,9 @@ export default {
             return this.card.ranges.length > 0;
         },
         cardStyle() {
-            return this.card.center ? 'flex flex-col items-center justify-center py-4' : 'px-6 py-4';
+            const baseClassName = 'nova-html-card nova-html-ranged-card';
+            const className = this.card.center ? 'flex flex-col items-center justify-center py-4' : 'px-6 py-4';
+            return `${baseClassName} ${className}`;
         },
         fixedStyle() {
             return this.card.title ? 'min-h-[90px]' : 'min-h-[128px]';

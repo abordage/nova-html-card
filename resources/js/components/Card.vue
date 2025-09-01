@@ -1,6 +1,6 @@
 <template>
     <card :class="cardStyle">
-        <h2 v-if="card.title" class="font-bold mb-2">{{ card.title }}</h2>
+        <h2 v-if="card.title" class="font-bold mb-2" v-html="card.title" />
 
         <div v-if="card.height === 'fixed'" :class="fixedStyle">
             <div :class="fixedInnerStyle">
@@ -23,7 +23,9 @@ export default {
 
     computed: {
         cardStyle() {
-            return this.card.center ? 'flex flex-col items-center justify-center py-4' : 'px-6 py-4';
+            const baseClassName = 'nova-html-card';
+            const className = this.card.center ? 'flex flex-col items-center justify-center py-4' : 'px-6 py-4';
+            return `${baseClassName} ${className}`;
         },
         fixedStyle() {
             return this.card.title ? 'min-h-[90px]' : 'min-h-[128px]';
